@@ -8,6 +8,7 @@ pipeline {
     stages {
         stage('Cloner le code') {
             steps {
+                sh 'rm -rf ./*'  // Nettoyage du répertoire avant le clone
                 sh 'git clone https://github.com/georgesmomo/youtube-app-frontend.git'
             }
         }
