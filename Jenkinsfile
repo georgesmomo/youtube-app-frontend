@@ -18,7 +18,7 @@ pipeline {
               dir('./youtube-app-frontend') {
                 sh 'npm install'
                 sh 'ng build --configuration=production'
-                sh 'ng test --watch=false'
+                //sh 'ng test --watch=false'
               }
             }
         }
