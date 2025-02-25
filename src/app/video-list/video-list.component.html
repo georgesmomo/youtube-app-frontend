@@ -1,0 +1,23 @@
+<div class="container">
+  <h2 class="my-4">Liste des vidéos</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Titre</th>
+        <th>Chaîne</th>
+        <th>Vues</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let video of videos">
+        <td>{{ video.title }}</td>
+        <td>{{ video.channelName }}</td>
+        <td>{{ video.nbView }}</td>
+        <td>
+          <button class="btn btn-danger" (click)="deleteVideo(video.videoId)">Supprimer</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,19 @@
+<div class="container">
+  <h2 class="my-4">Primes des utilisateurs</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>User</th>
+        <th>Vues totales</th>
+        <th>Prime (€)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let prime of primes">
+        <td>{{ prime.userName }}</td>
+        <td>{{ prime.totalViews }}</td>
+        <td>{{ prime.amount }} €</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
